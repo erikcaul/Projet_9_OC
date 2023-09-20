@@ -23,7 +23,7 @@ urlpatterns = [
     path('welcome/', views.welcome),
     path('registration/', views.registration),
     path('flow/', views.flow),
-    path('subscription/', views.subscription),
+    path('subscriptions/', views.subscriptions),
     path('ticket_creation/', views.ticket_creation),
     path('critical_creation_no_answering_ticket/',
          views.critical_creation_no_answering_ticket),

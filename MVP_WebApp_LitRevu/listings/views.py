@@ -14,7 +14,7 @@ def flow(request):
     return HttpResponse('<h1>Flux</h1>')
 
 
-def subscription(request):
+def subscriptions(request):
     return HttpResponse('<h1>Abonnements</h1>')
 
 
