@@ -16,7 +16,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from listings import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('welcome/', views.welcome),
+    path('registration/', views.registration),
+    path('flow/', views.flow),
+    path('subscription/', views.subscription),
+    path('ticket_creation/', views.ticket_creation),
+    path('critical_creation_no_answering_ticket/',
+         views.critical_creation_no_answering_ticket),
+    path('critical_creation_answering_ticket/',
+         views.critical_creation_answering_ticket),
+    path('own_post_view/', views.own_post_view),
+    path('critical_modification/', views.critical_modification),
+    path('ticket_modification/', views.ticket_modification),
 ]
